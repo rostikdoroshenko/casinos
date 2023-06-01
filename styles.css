@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #F9FAFA;
+  font-family: 'Roboto', serif;
+  letter-spacing: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: fit-content;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0;
+  color: #404040;
+  width: 100%;
+}
+
+.load-more {
+  border: 1px solid #429BF4;
+  border-radius: 23px;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #429BF4;
+  font-size: 14px;
+}
+
+.load-more:hover {
+  background: #429BF4;
+  color: #FFFFFF;
+}
+
+.all {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.new {
+  border: 1px solid #0000001E;
+  width: fit-content;
+  padding: 1px;
+  margin: 4px;
+  border-radius: 4px;
+  color: #68CB6C;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.star-block {
+  font-size: 12px;
+  color: #8F8F8F;
+  margin: 4px;
+}
+
+.flag {
+  width: 24px;
+}
+
+.star {
+  margin: auto 2px;
+}
+
+.rating {
+  margin: auto 4px;
+}
+
+.casino-title {
+  font-size: 15px;
+  margin: 4px;
+  color: #429BF4;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.all-text {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.all-casinos {
+  font-size: 14px;
+}
+
+.casino-card {
+  background: #FFFFFF;
+  display: flex;
+  padding: 4px;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px #00000029;
+  margin-top: 10px;
+}
+
+.card-img {
+  height: 50px;
+  margin: auto;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
+
+.grow-1 {
+  width: 10%;
+}
+
+.grow-2 {
+  width: 40%;
+}
+
+.visit-btn {
+  padding: 8px 14px;
+  background: #429BF4 0 0 no-repeat padding-box;
+  color: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.visit-btn:hover {
+  background: #3082D4;
+}
+
+.bonus-item {
+  border-radius: 13px;
+  background: #F3F3F3;
+  color: #5E6166;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.bonus-item:hover {
+  background: #DAECFE 0 0 no-repeat padding-box;
+}
+
+.modal {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 44px;
+  padding: 10px;
+  overflow: auto;
+  background: #FFFFFF 0 0 no-repeat padding-box;
+  box-shadow: 0 1px 6px #00000029;
+  border-radius: 4px;
+  cursor: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  width: 300px;
+}
+
+.welcome {
+  border: 2px dashed gray;
+  margin: 6px;
+  padding: 8px;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.copy-code {
+  display: none;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 18px;
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px #00000029;
+}
+
+.up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #FFFFFF;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+}
+
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 2px;
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 5px;
+}
+
+.modal-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-block-item {
+  padding: 8px;
+  display: flex;
+}
+
+.modal-block-item-title {
+  color: #8F8F8F;
+  width: 40%;
+}
+
+.free {
+  color: #68CB6C;
+}
+
+@media screen and (max-width: 480px) {
+  .casino-card {
+    flex-direction: column;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+}
